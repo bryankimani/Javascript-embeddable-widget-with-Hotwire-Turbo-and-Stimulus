@@ -1,4 +1,10 @@
-<%= form_with(model: email_catcher, url: api_v1_email_catchers_path) do |form| %>
+<%= form_with(model: email_catcher,
+                url: api_v1_email_catchers_path,
+                data: {
+                  controller: "widget-form",
+                  action: "submit->widget-form#submitForm:prevent",
+                  widget_form_target: "form" }) do |form| %>
+
   <% if email_catcher.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(email_catcher.errors.count, "error") %> prohibited this email from being saved:</h2>

@@ -1,4 +1,6 @@
 class Api::V1::EmailCatchersController < ApplicationController
+  skip_before_action :verify_authenticity_token, only: %i[ create ]
+
   def new
     @email_catcher = EmailCatcher.new
     respond_to do |format|
