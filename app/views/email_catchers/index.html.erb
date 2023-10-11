@@ -1,0 +1,11 @@
+<div>
+    <h1>Emails</h1>
+    <%= turbo_frame_tag "widget" %>
+    <ul>
+        <% @emails.each do |email| %>
+            <li><%= email.email %>
+        <% end %>
+    </ul>
+</div>
+
+<% javascript_include_tag "widget" %>

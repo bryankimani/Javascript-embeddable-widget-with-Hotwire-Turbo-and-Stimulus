@@ -1,0 +1,19 @@
+<%= form_with(model: email_catcher, url: api_v1_email_catchers_path) do |form| %>
+  <% if email_catcher.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(email_catcher.errors.count, "error") %> prohibited this email from being saved:</h2>
+      <ul>
+        <% email_catcher.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div>
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

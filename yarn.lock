@@ -161,6 +161,11 @@
   resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-7.1.0.tgz#9b1543b0abf5a0a7ef7088882ee3d6092b2745b3"
   integrity sha512-MBGzAQHOk+sXblpCQsM0MPxQDzvTLFwaFu8jqYbfWDejpZPszo9xaAOF/3+iv7ab1o6PFiTpdbh+PR4osofIWw==
 
+"@rails/request.js@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@rails/request.js/-/request.js-0.0.9.tgz#89e2a575405dc07eb8a9b3d2fe04289e1f057cd0"
+  integrity sha512-VleYUyrA3rwKMvYnz7MI9Ada85Vekjb/WVz7NuGgDO24Y3Zy9FFSpDMQW+ea/tlftD+CdX/W/sUosRA9/HkDOQ==
+
 abbrev@1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
